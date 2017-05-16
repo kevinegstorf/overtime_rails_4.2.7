@@ -40,5 +40,7 @@ describe 'navigate' do
 
       expect(page).to have_content('some rationale')
     end
+
+    it 'will have a user associated it' do
   end
 end
