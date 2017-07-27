@@ -10,4 +10,10 @@ resources :admin_users
   resources :posts
   devise_for :users, skip: [:registration]
   root to: 'static#homepage'
+
+  namespace :api do
+    namespace :v1 do
+      resources :posts, only: :index
+    end
+  end
 end
